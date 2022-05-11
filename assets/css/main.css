@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{}
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+nav {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  border-bottom: 3px solid gold;
+  padding-bottom: 0.5rem;
+}
+div {
+}
+.sectiontitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectiontitle .bar {
+  width: 250px;
+  height: 1px;
+}
+.sectiontitle .bar.orange {
+  background-color: #b88438;
+}
+.sectiontitle .bar.black {
+  background-color: black;
+}
+.sectiontitle .bar.white {
+  background-color: white;
+}
+h2 {
+  text-align: center;
+  margin: 3rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.hero {
+  background: #000000;
+}
+.hero .bck {
+  background: url(../img/foto_hero.jpeg);
+  display: flex;
+  justify-content: center;
+}
+.concepto {
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+  background: url(../img/bck_leaves.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.concepto hr {
+  margin-bottom: 2rem;
+}
+.concepto > div {
+  background: black;
+  color: white;
+  width: 30vw;
+  padding: 4rem 6rem;
+  position: relative;
+}
+.concepto img {
+  position: absolute;
+}
+.concepto img.hoja {
+  width: 500px;
+  top: -160px;
+  left: -250px;
+  transform: rotate(-45deg);
+}
+.concepto img.coctel {
+  width: 400px;
+  top: -62px;
+  right: -240px;
+}
+.fotos {
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.fotos .fotofondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 0;
+  height: 100%;
+}
+.fotos ul {
+  display: flex;
+  list-style: none;
+  width: 60vw;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.fotos li {
+  margin: 0.5rem;
+}
+.fotos li img {
+  max-width: 300px;
+}
+.carta {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.carta .tipocomidaselector {
+  display: flex;
+  justify-content: space-evenly;
+}
+.carta .cols {
+  display: flex;
+  justify-content: space-around;
+  background: url(../img/bck_leaves.jpg);
+  padding: 1rem;
+  width: 60vw;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+.carta .cols div {
+  background: white;
+  padding: 2rem;
+  width: 40%;
+  box-shadow: 2px 2px 10px 2px #ccc;
+}
+.carta h3 {
+  text-transform: uppercase;
+}
+.carta ul {
+  padding-inline-start: 0;
+  margin-bottom: 2rem;
+}
+.carta li {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.carta li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.carta li a:hover {
+  border-bottom: 3px solid gold;
+  padding-bottom: 0.5rem;
+}
+.carta li span:first-child {
+  max-width: 80%;
+}
+.plato {
+}
+.btn {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.reservas {
+  background: url(../img/bar_01.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 6rem;
+}
+.reservas h2 {
+  color: white;
+}
+.reservas .reservascontainer {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+.reservas .formcontainer {
+}
+.reservas form {
+}
+.firstrow {
+  display: flex;
+  justify-content: space-between;
+}
+.reservas .peoplenum {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+.reservas .date {
+  width: 45%;
+}
+.reservas form label {
+  color: white;
+}
+.reservas form label,
+.reservas form input,
+.reservas form select {
+  width: 100%;
+  height: 24px;
+  border: none;
+}
+.reservas button,
+.reservas a {
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin-bottom: 0.5rem;
+  border: none;
+  height: 24px;
+}
+.reservas p {
+  color: white;
+}
+.reservas a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.reservas aside {
+  padding: 0 2rem;
+}
+
+aside h3 {
+  color: darkgoldenrod;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+aside h4 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+aside hr {
+  height: 1px;
+  color: gray;
+  border-style: solid;
+}
+.booking-type-container {
+  margin-bottom: 1rem;
+}
+.blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 6rem;
+}
+.blog h2 {
+  text-align: center;
+}
+.blog ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
+}
+.blog li {
+  list-style: none;
+  width: 25vh;
+  min-height: 400px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+.blog li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.blog li.blog01 {
+  background-image: url(../img/blog_01.jpg);
+  background-size: cover;
+}
+.blog li.blog02 {
+  background-image: url(../img/blog_02.jpg);
+  background-size: cover;
+}
+.blog li.blog03 {
+  background-image: url(../img/blog_03.jpg);
+  background-size: cover;
+}
+.blog .supertext {
+  color: white;
+  border: solid 1px white;
+  padding: 0 0.5rem;
+}
+.blog .blogdate {
+  color: white;
+  font-size: 0.8em;
+  display: block;
+}
+.blog li div {
+}
+.element-button {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.whenyouwant {
+  background: url(../img/foto_hero.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.whenyouwant img {
+  width: 400px;
+  margin: 2rem auto;
+}
+.whenyouwant p {
+  text-align: center;
+}
+.whenyouwant ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: white;
+}
+.whenyouwant li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.whenyouwant i {
+  font-size: 3rem;
+  text-align: center;
+  color: #b88438;
+}
+.siguenos ul {
+  list-style: none;
+  display: flex;∫
+  display: flex;
+  justify-content: space-evenly;
+}
